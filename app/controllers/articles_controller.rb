@@ -1,8 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    puts 'I am here'
     @articles = Article.all
-    puts "articles #{@articles}"
   end
 
   def show
