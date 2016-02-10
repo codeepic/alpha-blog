@@ -6,6 +6,7 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -13,7 +14,11 @@
       <tr>
         <td><%= article.title %></td>
         <td><%= article.description %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
+<p>
+  <%= link_to 'New Article', new_article_path %>
+</p>
