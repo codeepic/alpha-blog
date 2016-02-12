@@ -1,2 +1,62 @@
+$navbar-default-bg: #3a6a9f;
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.center { text-align: center; }
+
+.jumbotron {
+  background-image: asset-url('mountains.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 550px;
+
+  h1{
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
+    text-shadow: 0px 0px 14px rgba(150, 150, 150, 1);
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+  }
+
+  .btn-xlarge{
+    font-size: 1.7em;
+    //background: #000;
+  }
+}
+
+footer{
+  margin-top: 40px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+
+  a:hover, a:active { color: #222; }
+  small { float: left; }
+
+  ul {
+    float: right;
+    list-style-type: none;
+
+    li{
+      float:left;
+      margin-left: 15px;
+    }
+  }
+}
