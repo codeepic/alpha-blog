@@ -49,7 +49,17 @@ $navbar-default-bg: #3a6a9f;
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
 }
+//on list page
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
 
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 footer{
   margin-top: 40px;
