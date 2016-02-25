@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    # @article = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def new
@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    # @article = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update
@@ -28,7 +28,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    #render plain: params[:article].inspect
     @article = Article.new(article_params)
 
     if @article.save
