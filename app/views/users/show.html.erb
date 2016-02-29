@@ -8,19 +8,7 @@
 
 <h4 class="center"><%= @user.username %> articles</h4>
 
-<% @user.articles.each do |article| %>
-  <p>
-    ssfw
-    <%= link_to article.title, article_path(article) %>
-  </p>
-<% end %>
+<%= render 'articles/article', obj: @user.articles %>
 
-<% if @user.articles.empty? %>
-    <h2>no articles created</h2>
-<% else %>
-    <h2>there are some articles</h2>
-<% end %>
-
-<p>profile image</p>
 <p><%= @user.email %></p>
 <%= link_to 'edit user', edit_user_path(@user) %>
