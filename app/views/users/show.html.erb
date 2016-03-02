@@ -8,7 +8,12 @@
 
 <h4 class="center"><%= @user.username %> articles</h4>
 
-<%= render 'articles/article', obj: @user.articles %>
+<%= render 'articles/article', obj: @user_articles %>
+<!-- used to be @user.articles, but for pagination to work had to be changed-->
+
+<div class="center">
+  <%= will_paginate @user_articles %>
+</div>
 
 <p><%= @user.email %></p>
 <%= link_to 'edit user', edit_user_path(@user) %>
